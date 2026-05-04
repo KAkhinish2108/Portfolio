@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ojas Agrawal | Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2 {
+  font-weight: 800;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero p {
+  max-width: 600px;
+  margin-top: 20px;
+  opacity: 0.8;
+  animation: fadeUp 1.5s ease forwards;
+}
+
+/* SECTIONS */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* PROJECTS */
+.project-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-group {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.project-group h3 {
+  margin-bottom: 18px;
+  font-size: 1.8rem;
+  color: #00ffcc;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: #121212;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card .project-name {
+  padding: 12px 10px;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.4);
+}
+
+.project-card .project-name span {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* SKILLS */
+.skills div {
+  margin-bottom: 15px;
+}
+
+.bar {
+  height: 8px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #00ffcc;
+  width: 0;
+  transition: 2s;
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 2px solid #00ffcc;
+  padding-left: 20px;
+}
+
+.timeline div {
+  margin-bottom: 20px;
+}
+
+/* CONTACT */
+.contact a {
+  display: block;
+  margin-bottom: 10px;
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Ojas Agrawal</h1>
+  <h3>Graphic Designer & B.Des Student</h3>
+  <p>
+    I’m Ojas Agrawal, a B.Des student at Alliance University, Bangalore, passionate about design and animation. I create visual concepts using Illustrator and Photoshop and I’m building my creative identity through my work.
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section class="fade">
+  <h2>About</h2>
+  <p>
+    I am a passionate design student specializing in digital illustration and visual storytelling. I enjoy creating expressive artwork and exploring animation. Currently building my portfolio and seeking creative opportunities.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section class="fade">
+  <h2>Projects</h2>
+  <div class="project-groups">
+    <div class="project-group">
+      <h3>Illustrator Work</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="Illustrator-1.jpeg" alt="Illustrator Project 1">
+          <div class="project-name">Illustrator Project 1<span>Illustrator</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Illustrator-2.jpeg" alt="Illustrator Project 2">
+          <div class="project-name">Illustrator Project 2<span>Illustrator</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Illustrator-3.jpeg" alt="Illustrator Project 3">
+          <div class="project-name">Illustrator Project 3<span>Illustrator</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Illustrator-4.jpeg" alt="Illustrator Project 4">
+          <div class="project-name">Illustrator Project 4<span>Illustrator</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Illustrator-5.jpeg" alt="Illustrator Project 5">
+          <div class="project-name">Illustrator Project 5<span>Illustrator</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Illustrator-6.jpeg" alt="Illustrator Project 6">
+          <div class="project-name">Illustrator Project 6<span>Illustrator</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Illustrator7.jpeg" alt="Illustrator Project 7">
+          <div class="project-name">Illustrator Project 7<span>Illustrator</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-group">
+      <h3>Photoshop Work</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="Photoshop-1.jpeg" alt="Photoshop Project 1">
+          <div class="project-name">Photoshop Project 1<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-2.jpeg" alt="Photoshop Project 2">
+          <div class="project-name">Photoshop Project 2<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-3.jpeg" alt="Photoshop Project 3">
+          <div class="project-name">Photoshop Project 3<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-4.jpeg" alt="Photoshop Project 4">
+          <div class="project-name">Photoshop Project 4<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-5.jpeg" alt="Photoshop Project 5">
+          <div class="project-name">Photoshop Project 5<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-6.jpeg" alt="Photoshop Project 6">
+          <div class="project-name">Photoshop Project 6<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-7.jpeg" alt="Photoshop Project 7">
+          <div class="project-name">Photoshop Project 7<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-8.jpeg" alt="Photoshop Project 8">
+          <div class="project-name">Photoshop Project 8<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-9.jpeg" alt="Photoshop Project 9">
+          <div class="project-name">Photoshop Project 9<span>Photoshop</span></div>
+        </div>
+        <div class="project-card">
+          <img src="Photoshop-10.jpeg" alt="Photoshop Project 10">
+          <div class="project-name">Photoshop Project 10<span>Photoshop</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="fade">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div>Adobe Illustrator
+      <div class="bar"><span style="width:90%"></span></div>
+    </div>
+    <div>Adobe Photoshop
+      <div class="bar"><span style="width:85%"></span></div>
+    </div>
+    <div>Sketching
+      <div class="bar"><span style="width:80%"></span></div>
+    </div>
+    <div>Digital Illustration
+      <div class="bar"><span style="width:85%"></span></div>
+    </div>
+    <div>Creative Thinking
+      <div class="bar"><span style="width:95%"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="fade">
+  <h2>Education</h2>
+  <div class="timeline">
+    <div>
+      <h4>Delhi Public School, Indore</h4>
+    </div>
+    <div>
+      <h4>Alliance University, Bangalore</h4>
+      <p>B.Des – First Year</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="fade contact">
+  <h2>Contact</h2>
+  <a href="mailto:ojas.n.agrawal@gmail.com">Email</a>
+  <a href="tel:+917000840090">Call</a>
+  <a href="https://www.linkedin.com/in/ojas-agrawal-b74b343a1" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</section>
+
+<script>
+// SCROLL ANIMATION
+const fades = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  fades.forEach(fade => {
+    const top = fade.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      fade.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
